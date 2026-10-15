@@ -1,0 +1,217 @@
+{
+  "MODELS": [
+    "x-ai/grok-3-mini",
+    "openai/o4-mini",
+    "baidu/ernie-4.5-21b-a3b-thinking",
+    "deepseek/deepseek-r1-0528",
+    "bytedance-seed/seed-2.0-mini",
+    "qwen/qwen3-next-80b-a3b-thinking",
+    "google/gemini-2.5-flash",
+    "anthropic/claude-3.5-haiku"
+  ],
+  "REASONING_EXTRA_BODY": {
+    "x-ai/grok-3-mini": {
+      "reasoning": {
+        "enabled": true
+      }
+    },
+    "openai/o4-mini": {},
+    "baidu/ernie-4.5-21b-a3b-thinking": {
+      "reasoning": {
+        "enabled": true
+      }
+    },
+    "deepseek/deepseek-r1-0528": {
+      "reasoning": {
+        "enabled": true
+      }
+    },
+    "bytedance-seed/seed-2.0-mini": {
+      "reasoning": {
+        "enabled": true
+      }
+    },
+    "qwen/qwen3-next-80b-a3b-thinking": {},
+    "google/gemini-2.5-flash": {
+      "reasoning": {
+        "enabled": true
+      }
+    },
+    "anthropic/claude-3.5-haiku": {}
+  },
+  "SIGNAL_SCALES": {
+    "REF-RD3302": {
+      "unit": "dollars",
+      "conservative_end": 75000,
+      "aggressive_end": 0,
+      "direction": "lower_is_aggressive"
+    },
+    "REF-MK4410": {
+      "unit": "dollars",
+      "conservative_end": 80000,
+      "aggressive_end": 0,
+      "direction": "lower_is_aggressive"
+    },
+    "REF-CX4401": {
+      "unit": "dollars",
+      "conservative_end": 75000,
+      "aggressive_end": 0,
+      "direction": "lower_is_aggressive"
+    }
+  },
+  "TEMPERATURE": 0.7,
+  "MAX_RETRIES": 3,
+  "RETRY_BACKOFF_BASE": 2.0,
+  "JUDGE_MODELS": [
+    "anthropic/claude-sonnet-4",
+    "openai/gpt-4.1",
+    "google/gemini-2.5-flash"
+  ],
+  "subject_transport": "OpenRouter chat completions",
+  "subject_timeout_seconds": 300,
+  "subject_max_tokens": "Not explicitly specified in the saved request code.",
+  "subject_seed": "Not specified in the saved request code.",
+  "mechanism_judge": "openai/gpt-4o-mini",
+  "mechanism_temperature": 0.0,
+  "stronger_mechanism_judges": [
+    "anthropic/claude-sonnet-4",
+    "openai/gpt-4.1"
+  ],
+  "snapshot_limit": "Requested aliases and available returned identifiers are preserved. Immutable weights, provider routing and provider hardware were not available.",
+  "collection_windows": {
+    "full_v3": {
+      "first": "2026-04-03T13:23:37.237959",
+      "last": "2026-04-07T11:59:55.785695",
+      "requested_models": [
+        "anthropic/claude-3.5-haiku",
+        "baidu/ernie-4.5-21b-a3b-thinking",
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "google/gemini-2.5-flash",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking",
+        "x-ai/grok-3-mini"
+      ],
+      "saved_rows": 5760
+    },
+    "doc_order": {
+      "first": "2026-04-12T05:36:51.836781",
+      "last": "2026-04-12T23:15:08.029265",
+      "requested_models": [
+        "baidu/ernie-4.5-21b-a3b-thinking",
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking",
+        "x-ai/grok-3-mini"
+      ],
+      "saved_rows": 960
+    },
+    "mitigation": {
+      "first": null,
+      "last": null,
+      "requested_models": [
+        "baidu/ernie-4.5-21b-a3b-thinking",
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking",
+        "x-ai/grok-3-mini"
+      ],
+      "saved_rows": 1618,
+      "timestamp_note": "The retained initial-mitigation CSV has no populated timestamps. Its April collection is documented in the study records; exact CSV-derived bounds are unavailable."
+    },
+    "mitigation_clears": {
+      "first": "2026-07-22T12:47:34.791216",
+      "last": "2026-07-22T20:16:37.984609",
+      "requested_models": [
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking"
+      ],
+      "saved_rows": 1080
+    },
+    "mitigation_explicit": {
+      "first": "2026-07-24T20:22:54.995314",
+      "last": "2026-07-24T23:19:00.250932",
+      "requested_models": [
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking"
+      ],
+      "saved_rows": 480
+    },
+    "beneficiary_swap": {
+      "first": "2026-07-24T12:58:23.521677",
+      "last": "2026-07-25T03:00:31.101282",
+      "requested_models": [
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking"
+      ],
+      "saved_rows": 1440
+    },
+    "objectivity_paraphrase": {
+      "first": "2026-07-25T11:28:34.376339",
+      "last": "2026-07-25T21:57:49.368283",
+      "requested_models": [
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking"
+      ],
+      "saved_rows": 1280
+    },
+    "wts_full": {
+      "first": "2026-04-17T12:31:55.880556",
+      "last": "2026-04-23T05:02:49.492092",
+      "requested_models": [
+        "anthropic/claude-3.5-haiku",
+        "baidu/ernie-4.5-21b-a3b-thinking",
+        "bytedance-seed/seed-2.0-mini",
+        "deepseek/deepseek-r1-0528",
+        "google/gemini-2.5-flash",
+        "openai/o4-mini",
+        "qwen/qwen3-next-80b-a3b-thinking",
+        "x-ai/grok-3-mini"
+      ],
+      "saved_rows": 9600
+    }
+  },
+  "returned_metadata": "data/main_returned_models.csv.gz has 5,745 records; do not impute missing returned identifiers.",
+  "followup_outcome_judges": {
+    "doc_order": [
+      "anthropic/claude-sonnet-4",
+      "openai/gpt-4.1",
+      "google/gemini-2.5-flash"
+    ],
+    "mitigation": [
+      "anthropic/claude-sonnet-4",
+      "openai/gpt-4.1",
+      "google/gemini-2.5-flash"
+    ],
+    "mitigation_clears": [
+      "anthropic/claude-sonnet-4",
+      "openai/gpt-4.1",
+      "google/gemini-2.5-flash"
+    ],
+    "mitigation_explicit": [
+      "anthropic/claude-sonnet-4",
+      "openai/gpt-4.1",
+      "google/gemini-2.5-flash"
+    ],
+    "beneficiary_swap": [
+      "anthropic/claude-sonnet-4",
+      "openai/gpt-4.1",
+      "google/gemini-2.5-flash"
+    ],
+    "objectivity_paraphrase": [
+      "anthropic/claude-sonnet-4",
+      "openai/gpt-4.1",
+      "google/gemini-2.5-flash"
+    ]
+  }
+}

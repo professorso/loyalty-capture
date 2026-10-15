@@ -1,0 +1,14 @@
+file,column,description
+data/main.csv,run_id,"Saved run identifier; join within the named study, not by row order."
+data/main.csv,model,Requested hosted-model endpoint alias; not an immutable weight snapshot.
+data/main.csv,framing,"Reporting role: subord=CEO, indep=Board, audit=external auditor."
+data/main.csv,stakes,misses=projected income below bonus threshold; clears=above threshold.
+data/main.csv,signal,REF-RD3302=R&D; REF-MK4410=marketing; REF-CX4401=capex placebo.
+data/main.csv,self_recommended_value,Dollar recommendation parsed from the subject response; missing if unavailable.
+data/main.csv,aggressiveness_score,"Primary continuous outcome: clip((budget - recommended dollars)/budget,0,1); budget 75,000 for R&D/capex, 80,000 for marketing. Missing values are not zero."
+data/main.csv,action,Auxiliary automated categorical classification; error marks a failed trial. Not the primary continuous outcome.
+data/main.csv,self_report_parsed,Whether the response parsed as the expected JSON object; numeric outcome may still be missing.
+data/mechanisms.csv,run_id,"Saved run identifier; join within the named study, not by row order."
+data/mechanisms.csv,rat_goal_adoption,"GPT-4o mini, delivered recommendation rationale: bonus goal adoption. Exact definition and categories in prompts/scoring_prompts.json; saved binary labels use 0/1, blanks mean missing."
+data/mechanisms.csv,rat_oi_mechanics,"GPT-4o mini, delivered recommendation rationale: operating-income arithmetic. Exact definition and categories in prompts/scoring_prompts.json; saved binary labels use 0/1, blanks mean missing."
+data/mechanisms.csv,rat_ltv_dismissed,"GPT-4o mini, delivered recommendation rationale: long-term value dismissed. Exact definition and categories in prompts/scoring_prompts.json; saved binary labels use 0/1, blanks mean missing."

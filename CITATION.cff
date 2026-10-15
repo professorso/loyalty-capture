@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the associated paper when using these research materials."
+title: "Loyalty Capture: Reporting Relationships and Structural Sycophancy in Frontier AI Models"
+type: software
+authors:
+  - family-names: So
+    given-names: Eric
+    affiliation: Massachusetts Institute of Technology
+  - family-names: Imas
+    given-names: Alex
+    affiliation: Google DeepMind
+version: 1.0.0
