@@ -5,8 +5,8 @@ Structural Sycophancy in Frontier AI Models.”**
 
 Eric So (MIT) and Alex Imas (Google DeepMind).
 
-Public release is pending author review. This repository is maintained privately
-while the manuscript and release package are finalized.
+Code is released under the MIT License; original numeric data and annotations
+are released under CC BY 4.0.
 
 This repository reproduces the main experiment and its three delivered-rationale
 results from saved observations. It includes the 5,760 scheduled trials, the
@@ -15,10 +15,10 @@ that recomputes the main behavioral effects and three single-measure mechanism
 interactions. The generated plots summarize these results; they do not reproduce
 the manuscript's exact figure layouts or every panel. In particular, the
 restored stacked-mechanism combinations are covered by the companion archive.
-The larger companion archive contains the saved
-model outputs, available reasoning traces, follow-up experiments, and validation
-materials. The manuscript and private review correspondence are not distributed
-in these packages.
+A separate companion archive has been prepared with the saved model outputs,
+available reasoning traces, follow-up experiments, and validation materials;
+it is not included in this public repository. The manuscript and private review
+correspondence are not distributed in these packages.
 
 ## Reproduce
 
@@ -118,11 +118,12 @@ include a live model-generation runner.
 
 ## Companion archive and reuse
 
-The companion asset is named `loyalty-capture-companion.zip`. It is intended to
-accompany the same public release and is self-contained: extract it, install its
-locked requirements and run `python reproduce.py`. Its README maps each retained
-follow-up and validation analysis to the underlying data. Public release and
-permanent archive identifiers will be added when assigned.
+The separate companion asset is named `loyalty-capture-companion.zip`. It is
+self-contained: extract it, install its locked requirements and run
+`python reproduce.py`. Its README maps each retained follow-up and validation
+analysis to the underlying data. The companion archive has not yet been
+published; its public location and permanent archival identifier will be added
+when available.
 
 See `LICENSE` for authored code, prompts and documentation and
 `DATA_LICENSE.md` for the original numeric data and annotations. Third-party

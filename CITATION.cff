@@ -10,3 +10,6 @@ authors:
     given-names: Alex
     affiliation: Google DeepMind
 version: 1.0.0
+date-released: 2026-10-22
+repository-code: "https://github.com/professorso/loyalty-capture"
+license: MIT
